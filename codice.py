@@ -2,7 +2,7 @@ import os
 import requests
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-admin_list = []
+admin_list = [2102404147]
 
 def start(update, context):
     if update.message.from_user.id in admin_list:
