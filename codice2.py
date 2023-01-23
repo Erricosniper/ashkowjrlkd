@@ -34,7 +34,7 @@ updater = Updater("5849475631:AAFx9r-_fqZvax38VC4IMRQu5bO8H8zcO-w", use_context=
 
 updater.dispatcher.add_handler(CommandHandler("start", start))
 updater.dispatcher.add_handler(CommandHandler("add_admin", add_admin))
-updater.dispatcher.add_handler(MessageHandler(Filters.text, download_file))
+updater.dispatcher.add_handler(MessageHandler(filters.text, download_file))
 
 updater.start_polling()
 updater.idle()
